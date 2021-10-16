@@ -1,0 +1,288 @@
+{
+  "BasicDetails": {
+    "SourceApp": "BPMRL",
+    "TransactionBranch": "001",
+    "ProductCode": "P709",
+    "Cif": "001120263",
+    "Currency": "JOD",
+    "Amount": 3000,
+    "ValueDate": "2021-09-05",
+    "MaturityDate": "2024-09-05",
+    "CreditAccountId": "0010112026320101",
+    "DebitAccountId": "0010112026320101"
+  },
+  "UserDefinedElements": [
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "COMMISSION",
+      "Value": 0,
+      "ResolvedValue": null,
+      "RateCode": null
+    },
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "CONT_COPY",
+      "Value": 0,
+      "ResolvedValue": null,
+      "RateCode": null
+    },
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "FIX_PNL_AMT",
+      "Value": 10,
+      "ResolvedValue": null,
+      "RateCode": null
+    },
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "HAND_CHG",
+      "Value": 0,
+      "ResolvedValue": null,
+      "RateCode": null
+    },
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "INTEREST_RATE",
+      "Value": "4.886",
+      "ResolvedValue": 6.99,
+      "RateCode": "RINTERB9"
+    },
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "OD_PNL_COMM",
+      "Value": 0,
+      "ResolvedValue": null,
+      "RateCode": null
+    },
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "OD_PNL_RATE",
+      "Value": 18,
+      "ResolvedValue": null,
+      "RateCode": null
+    },
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "PROC_CHG_AMT",
+      "Value": 0,
+      "ResolvedValue": null,
+      "RateCode": null
+    },
+    {
+      "EffectiveDate": "2021-09-05",
+      "Name": "PRE_PENL_RATE",
+      "Value": 1,
+      "ResolvedValue": null,
+      "RateCode": null
+    }
+  ],
+  "Charges": [
+    {
+      "Name": "COMM",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101"
+    },
+    {
+      "Name": "STP_DUTY",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101"
+    },
+    {
+      "Name": "COPYCHG",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101"
+    },
+    {
+      "Name": "ADCH_CHG",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101"
+    },
+    {
+      "Name": "PRO_CHG_AMT",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101"
+    }
+  ],
+  "Components": [
+    {
+      "Name": "FIX_PNL_AM",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101",
+      "Schedule": []
+    },
+    {
+      "Name": "OD_PNL_COM",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101",
+      "Schedule": []
+    },
+    {
+      "Name": "OD_PN_RATE",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101",
+      "Schedule": []
+    },
+    {
+      "Name": "PRE_PENRATE",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101",
+      "Schedule": []
+    },
+    {
+      "Name": "PRINCIPAL",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101",
+      "Schedule": []
+    },
+    {
+      "Name": "HANDLNG_CHG",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101",
+      "Schedule": [
+        {
+          "Type": "P",
+          "Flag": "N",
+          "Formula": "HANDLING_CHG_FRM_1",
+          "FirstDueDate": "2021-10-05",
+          "NumberOfSchedules": 35,
+          "Frequency": 1,
+          "Unit": "M",
+          "EndDate": "2024-08-05",
+          "Amount": null,
+          "EmiAmount": null,
+          "Capitalized": "N",
+          "Waive": "N",
+          "ScheduleStartDate": null,
+          "DueDateOn": "5"
+        },
+        {
+          "Type": "P",
+          "Flag": "N",
+          "Formula": "HANDLING_CHG_FRM_1",
+          "FirstDueDate": "2024-09-05",
+          "NumberOfSchedules": 1,
+          "Frequency": 1,
+          "Unit": "B",
+          "EndDate": "2024-09-05",
+          "Amount": null,
+          "EmiAmount": null,
+          "Capitalized": "N",
+          "Waive": "N",
+          "ScheduleStartDate": null,
+          "DueDateOn": ""
+        }
+      ]
+    },
+    {
+      "Name": "MAIN_INT",
+      "Waive": "N",
+      "DebitAccountId": "0010112026320101",
+      "CreditAccountId": "0010112026320101",
+      "Schedule": [
+        {
+          "Type": "P",
+          "Flag": "N",
+          "Formula": "MAIN_INT_FRM_2",
+          "FirstDueDate": "2021-10-05",
+          "NumberOfSchedules": 35,
+          "Frequency": 1,
+          "Unit": "M",
+          "EndDate": "2024-08-05",
+          "Amount": null,
+          "EmiAmount": null,
+          "Capitalized": "N",
+          "Waive": "N",
+          "ScheduleStartDate": null,
+          "DueDateOn": "5"
+        },
+        {
+          "Type": "P",
+          "Flag": "N",
+          "Formula": "MAIN_INT_FRM_2",
+          "FirstDueDate": "2024-09-05",
+          "NumberOfSchedules": 1,
+          "Frequency": 1,
+          "Unit": "B",
+          "EndDate": "2024-09-05",
+          "Amount": null,
+          "EmiAmount": null,
+          "Capitalized": "N",
+          "Waive": "N",
+          "ScheduleStartDate": null,
+          "DueDateOn": ""
+        }
+      ]
+    }
+  ],
+  "UserDefinedFields": [
+    {
+      "Name": "FACILITY_PURPOSE",
+      "Value": "10"
+    },
+    {
+      "Name": "NUMBER_OF_RESTRUCTURE_P",
+      "Value": "0"
+    },
+    {
+      "Name": "AUTHORITY_LEVEL",
+      "Value": "المستوى الاول"
+    },
+    {
+      "Name": "BUYOUT",
+      "Value": "NO"
+    },
+    {
+      "Name": "DBR_PERCENTAGE",
+      "Value": "0"
+    },
+    {
+      "Name": "PERSONAL_LOAN_LINE",
+      "Value": "171100"
+    },
+    {
+      "Name": "REASON",
+      "Value": "Test"
+    },
+    {
+      "Name": "P_REFERRED_BY",
+      "Value": "2350"
+    },
+    {
+      "Name": "COMMERCIAL_SECTOR_PL_P",
+      "Value": "10"
+    },
+    {
+      "Name": "CUSTOMER_TYPE",
+      "Value": "1"
+    },
+    {
+      "Name": "RESIDENCY",
+      "Value": "1"
+    },
+    {
+      "Name": "LIFE_INSURANCE_POLICY",
+      "Value": "Yes"
+    },
+    {
+      "Name": "XREF",
+      "Value": 9056
+    }
+  ],
+  "LimitLinkage": {
+    "Sequence": null,
+    "Type": "L",
+    "Branch": "001",
+    "LineId": "R3212026318"
+  }
+}
